@@ -1,5 +1,5 @@
 # FtplibWrapper
-Wrapper over Ftplib. elementary FTP actions
+Wrapper over Ftplib, elementary FTP actions
 
 **How to use:**
 
