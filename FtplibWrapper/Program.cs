@@ -1,10 +1,14 @@
-# FtplibWrapper
-Wrapper over Ftplib. elementary FTP actions
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
 
-**How to use:**
-
-   ```sh
-     using (IFtpHandler ftp = new FtpHandler("ftp.server.net", "username", "pass", port: 21))
+namespace FtplibWrapper
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            using (IFtpHandler ftp = new FtpHandler("ftp.server.net", "username", "pass", port: 21))
             {
                 // / = ftp root
                 // /someFolder = some folder in root
@@ -61,4 +65,9 @@ Wrapper over Ftplib. elementary FTP actions
                     Console.WriteLine($"Folder {ftpTestFolder} removed!");
                 }
 
-```
+                Console.WriteLine("\n" + "Done! ");
+                Console.ReadLine();
+            }
+        }
+    }
+}
